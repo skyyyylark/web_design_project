@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+</head>
+<body>
+    <header class="header">
+        <div><a href="mainPage.html"><img class="logo-white-img" src="pics/logo-white.png"></a></div>
+        <nav class="nav">
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+            <a href="#">Channels</a>
+            <a href="#">Music</a>
+        </nav>
+        <div class="actions">
+            <button class="search"><i class="ai-search"></i> Search</button>
+            <button class="sign-in"><i class="ai-person"></i> Sign in</button>
+        </div>
+    </header>
+
+    <section class="carousel-section">
+    <div class="carousel">
+        <div class="carousel-slide active">
+            <img src="pics/slide1.png" alt="Slide 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="pics/slide2.png" alt="Slide 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="pics/slide3.png" alt="Slide 3">
+        </div>
+    </div>
+    
+    <div class="carousel-content">
+        <h1>Dive into a <span class="highlight">universe</span> of un-ending content and channels</h1>
+        <button class="trial-button">Start FREE trial</button>
+    </div>
+
+    <div class="carousel-controls">
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="setSlide(0)"></span>
+            <span class="indicator" onclick="setSlide(1)"></span>
+            <span class="indicator" onclick="setSlide(2)"></span>
+        </div>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</section>
+<div class="container">
+    <div class="recs">
+        <h2 class="blockTitle">Recommended Channels</h2>
+        <div class="channels">
+          <div class="channel-card">
+            <img src="pics/channel1.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/fox-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">FOX</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel2.png" alt="Fox Channel">
+            <div class="logo" id="abc-logo"><img src="pics/abc-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">ABC</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel3.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/nbc-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">NBC</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel4.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/espn-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">ESPN</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel5.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/usa-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">USA</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel6.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/tru-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">TRU TV</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+    </div>
+    <div class="newChannels">
+        <div class="title-container">
+          <h2 class="blockTitle">New Channels</h2>
+          <a href="#" class="view-all-link">View all <i class="ai-chevron-right"></i></a>
+        </div>
+
+        <div class="channels">
+          <div class="channel-card">
+            <img src="pics/channel7.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/fx-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">FX</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          
+          <div class="channel-card">
+            <img src="pics/channel8.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/bravo-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">Bravo</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel2.png" alt="Fox Channel">
+            <div class="logo" id="abc-logo"><img src="pics/abc-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">ABC</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel9.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/foxnews-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">FOX News</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel6.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/tru-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">TRU TV</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          <div class="channel-card">
+            <img src="pics/channel10.png" alt="Fox Channel">
+            <div class="logo"><img src="pics/tbs-logo.png"></div>
+            <div class="hover-info">
+              <div class="channel-logo">TBS</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+          
+    </div>
+
+    <div class="newMovies">
+        <div class="title-container">
+          <h2 class="blockTitle">New Movies</h2>
+          <a href="#" class="view-all-link">View all <i class="ai-chevron-right"></i></a>
+        </div>
+        <div class="movies">
+            <div class="movie-card">
+            <img src="pics/movie1.png">
+            <div class="hover-info">
+              <div class="movie-name">Бойфред из будущего</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie2.png">
+            <div class="hover-info">
+              <div class="movie-name">Along for the ride</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie3.png">
+            <div class="hover-info">
+              <div class="movie-name">Legacies</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie4.png">
+            <div class="hover-info">
+              <div class="movie-name">The White Queen</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie1.png">
+            <div class="hover-info">
+              <div class="movie-name">Бойфред из будущего</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie6.png">
+            <div class="hover-info">
+              <div class="movie-name">Красное уведомление</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie7.png">
+            <div class="hover-info">
+              <div class="movie-name">Charlie's Angels</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="newMovies">
+        <div class="title-container">
+          <h2 class="blockTitle">Popular Movies</h2>
+          <a href="#" class="view-all-link">View all <i class="ai-chevron-right"></i></a>
+        </div>
+        <div class="movies">
+          <div class="movie-card">
+            <img src="pics/movie2.png">
+            <div class="hover-info">
+              <div class="movie-name">Along for the ride</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie6.png">
+            <div class="hover-info">
+              <div class="movie-name">Красное уведомление</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+            <div class="movie-card">
+            <img src="pics/movie1.png">
+            <div class="hover-info">
+              <div class="movie-name">Бойфред из будущего</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie3.png">
+            <div class="hover-info">
+              <div class="movie-name">Legacies</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie4.png">
+            <div class="hover-info">
+              <div class="movie-name">The White Queen</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie7.png">
+            <div class="hover-info">
+              <div class="movie-name">Charlie's Angels</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <img src="pics/movie1.png">
+            <div class="hover-info">
+              <div class="movie-name">Бойфред из будущего</div>
+              <button class="watch-now">Watch Now</button>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <div class="gamesBlock">
+        <div class="title-container">
+          <h2 class="blockTitle">Games</h2>
+          <a href="#" class="view-all-link">View all <i class="ai-chevron-right"></i></a>
+        </div>
+        <div class="games">
+          <div class="game-card">
+            <img src="pics/game1.png">
+            <div class="hover-info">
+              <div class="game-name">Super Mario 3</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="pics/game2.png">
+            <div class="hover-info">
+              <div class="game-name">Fortnite</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="pics/game3.png">
+            <div class="hover-info">
+              <div class="game-name">Battlefield 2042</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="pics/game4.png">
+            <div class="hover-info">
+              <div class="game-name">Assassin's creed: Valhalla</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="pics/game5.png">
+            <div class="hover-info">
+              <div class="game-name">Lego Batman</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="pics/game6.png">
+            <div class="hover-info">
+              <div class="game-name">Horizon Zero Dawn</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img src="pics/game7.png">
+            <div class="hover-info">
+              <div class="game-name">Sonic Dash +</div>
+              <button class="watch-now">Play Now</button>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="pics/footer-logo.png" alt="Logo" />
+      <p>
+        Hot Africa, we offer original, exclusive and premium stories. Everything
+        you want to watch, anytime, anywhere and as much.
+      </p>
+      <div class="store-buttons">
+        <a href="#"><img src="pics/appstore.png" alt="App Store" /></a>
+        <a href="#"><img src="pics/playstore.png" alt="Google Play" /></a>
+      </div>
+      <div class="social-icons">
+          <i class="ai-facebook-fill"></i>
+          <i class="ai-instagram-fill"></i>
+          <i class="ai-twitter-fill"></i>
+          <i class="ai-youtube-fill"></i>
+        </div>
+      <div class="copyrightLinks">
+        <p><a href="#">Terms of use</a>  <a href="#">Privacy Policy</a>  <a href="#">SiteMap</a></p>
+      </div>
+    </div>
+
+    <div class="footer-links-group">
+      <div class="footer-links">
+        <h4>Sign in</h4>
+        <a href="#">Personal data</a>
+        <a href="#">Choosing a Plan</a>
+        <a href="#">Payment</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Movies</h4>
+        <a href="#">Lock Upp</a>
+        <a href="#">Pavitra Rishta</a>
+        <a href="#">Girgit</a>
+        <a href="#">Hai Taubba Season 3</a>
+        <a href="#">Cartel</a>
+        <a href="#">Crimes And Confessions</a>
+        <a href="#">Punch Beat Season 2</a>
+        <a href="#">Broken But Beautiful Season 3</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Series</h4>
+        <a href="#">X.X.X. Season 2</a>
+        <a href="#">Gandii Baat Season 5</a>
+        <a href="#">Gandii Baat Season 6</a>
+        <a href="#">Broken But Beautiful Season 1</a>
+        <a href="#">Broken But Beautiful Season 2</a>
+        <a href="#">Class Of 2020</a>
+        <a href="#">Bekaaboo Season 1</a>
+        <a href="#">Ragini MMS Returns Season 2</a>
+      </div>
+    </div>
+  </div>
+    <p class="copText">Copyright &copy; 2022 Hot Africa. All rights reserved.</p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
