@@ -167,13 +167,13 @@ background: linear-gradient(45deg, rgba(10,9,9,1) 5%, rgba(52,21,21,1) 49%, rgba
 
 .channel-card {
   position: relative;
-  flex: 0 0 230px; 
-  height: 260px;
+  flex: 0 0 200px; 
+  height: 220px;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
-  margin: 0px 20px 0px 20px;
+  margin: 20px 0px 0px 20px;
 }
 
 .channel-card img {
@@ -278,8 +278,8 @@ background: linear-gradient(45deg, rgba(10,9,9,1) 5%, rgba(52,21,21,1) 49%, rgba
   transition: transform 0.3s ease;
   cursor: pointer;
   margin: 0px 10px 30px 10px;
-  flex: 0 0 230px; 
-  height: 350px; 
+  flex: 0 0 180px; 
+  height: 300px; 
 }
 
 .movie-card img {
@@ -317,8 +317,8 @@ background: linear-gradient(45deg, rgba(10,9,9,1) 5%, rgba(52,21,21,1) 49%, rgba
   transition: transform 0.3s ease;
   cursor: pointer;
   margin: 0px 10px 30px 10px;
-  flex: 0 0 210px; 
-  height: 210px; 
+  flex: 0 0 180px; 
+  height: 180px; 
 }
 
 .game-card img {
