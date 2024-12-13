@@ -11,14 +11,56 @@
     <header class="header">
         <div><a href="mainPage.html"><img class="logo-white-img" src="pics/logo-white.png"></a></div>
         <nav class="nav">
-            <a href="#">Movies</a>
-            <a href="#">Series</a>
-            <a href="#">Channels</a>
-            <a href="#">Music</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-button">Movies</a>
+                <div class="dropdown-content">
+                    <a href="#">Action</a>
+                    <a href="#">Comedy</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Horror</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-button">Series</a>
+                <div class="dropdown-content">
+                    <a href="#">Crime</a>
+                    <a href="#">Sci-Fi</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Fantasy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-button">Channels</a>
+                <div class="dropdown-content">
+                    <a href="#">Sports</a>
+                    <a href="#">News</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Music</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-button">Music</a>
+                <div class="dropdown-content">
+                    <a href="#">Pop</a>
+                    <a href="#">Rock</a>
+                    <a href="#">Jazz</a>
+                    <a href="#">Classical</a>
+                </div>
+            </div>
         </nav>
+
         <div class="actions">
             <button class="search"><i class="ai-search"></i> Search</button>
-            <button class="sign-in"><i class="ai-person"></i> Sign in</button>
+            <div class="burger-container">
+              <div class="burger-menu" id="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+              </div>
+              <div class="menu" id="menu">
+                <button class="sign-up"><i class="ai-person"></i> Sign up</button>
+              </div>
+            </div>
         </div>
     </header>
 
@@ -31,7 +73,7 @@
             <img src="pics/slide2.png" alt="Slide 2">
         </div>
         <div class="carousel-slide">
-            <img src="pics/slide3.png" alt="Slide 3">
+            <img src="pics/slide3.png" alt="Slide 3"> 
         </div>
     </div>
     
@@ -59,7 +101,7 @@
             <div class="logo"><img src="pics/fox-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">FOX</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.fox.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -67,7 +109,7 @@
             <div class="logo" id="abc-logo"><img src="pics/abc-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">ABC</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://abc.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -75,7 +117,7 @@
             <div class="logo"><img src="pics/nbc-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">NBC</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.nbc.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -83,7 +125,7 @@
             <div class="logo"><img src="pics/espn-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">ESPN</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.espn.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -91,7 +133,7 @@
             <div class="logo"><img src="pics/usa-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">USA</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.usanetwork.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -99,7 +141,7 @@
             <div class="logo"><img src="pics/tru-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">TRU TV</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.youtube.com/channel/UCAOiOx2oeC9EycrGjWV2pkQ">Watch Now</a></button>
             </div>
           </div>
     </div>
@@ -115,7 +157,7 @@
             <div class="logo"><img src="pics/fx-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">FX</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.youtube.com/channel/UC2dIDJBf9W88PxGm-uHZPaQ">Watch Now</a></button>
             </div>
           </div>
           
@@ -124,7 +166,7 @@
             <div class="logo"><img src="pics/bravo-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">Bravo</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.bravotv.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -132,7 +174,7 @@
             <div class="logo" id="abc-logo"><img src="pics/abc-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">ABC</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://abc.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -140,7 +182,7 @@
             <div class="logo"><img src="pics/foxnews-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">FOX News</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.fox.com/">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -148,7 +190,7 @@
             <div class="logo"><img src="pics/tru-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">TRU TV</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.youtube.com/channel/UCAOiOx2oeC9EycrGjWV2pkQ">Watch Now</a></button>
             </div>
           </div>
           <div class="channel-card">
@@ -156,7 +198,7 @@
             <div class="logo"><img src="pics/tbs-logo.png"></div>
             <div class="hover-info">
               <div class="channel-logo">TBS</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.tbs.co.jp/">Watch Now</a></button>
             </div>
           </div>
           
@@ -172,7 +214,7 @@
             <img src="pics/movie1.png">
             <div class="hover-info">
               <div class="movie-name">Бойфред из будущего</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/7419">Watch Now</a></button>
             </div>
           </div>
 
@@ -180,7 +222,7 @@
             <img src="pics/movie2.png">
             <div class="hover-info">
               <div class="movie-name">Along for the ride</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.kinopoisk.ru/film/4477148/?utm_referrer=yandex.ru">Watch Now</a></button>
             </div>
           </div>
 
@@ -188,7 +230,7 @@
             <img src="pics/movie3.png">
             <div class="hover-info">
               <div class="movie-name">Legacies</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.imdb.com/title/tt8103070/">Watch Now</a></button>
             </div>
           </div>
 
@@ -196,7 +238,7 @@
             <img src="pics/movie4.png">
             <div class="hover-info">
               <div class="movie-name">The White Queen</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.kinopoisk.ru/series/723644/">Watch Now</a></button>
             </div>
           </div>
 
@@ -204,7 +246,7 @@
             <img src="pics/movie1.png">
             <div class="hover-info">
               <div class="movie-name">Бойфред из будущего</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/7419">Watch Now</a></button>
             </div>
           </div>
 
@@ -212,7 +254,7 @@
             <img src="pics/movie6.png">
             <div class="hover-info">
               <div class="movie-name">Красное уведомление</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/19011">Watch Now</a></button>
             </div>
           </div>
 
@@ -220,7 +262,7 @@
             <img src="pics/movie7.png">
             <div class="hover-info">
               <div class="movie-name">Charlie's Angels</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/16902">Watch Now</a></button>
             </div>
           </div>
         </div>
@@ -235,7 +277,7 @@
             <img src="pics/movie2.png">
             <div class="hover-info">
               <div class="movie-name">Along for the ride</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.kinopoisk.ru/film/4477148/?utm_referrer=yandex.ru">Watch Now</a></button>
             </div>
           </div>
 
@@ -243,7 +285,7 @@
             <img src="pics/movie6.png">
             <div class="hover-info">
               <div class="movie-name">Красное уведомление</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/19011">Watch Now</a></button>
             </div>
           </div>
 
@@ -251,7 +293,7 @@
             <img src="pics/movie1.png">
             <div class="hover-info">
               <div class="movie-name">Бойфред из будущего</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/7419">Watch Now</a></button>
             </div>
           </div>
 
@@ -259,7 +301,7 @@
             <img src="pics/movie3.png">
             <div class="hover-info">
               <div class="movie-name">Legacies</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.imdb.com/title/tt8103070/">Watch Now</a></button>
             </div>
           </div>
 
@@ -267,7 +309,7 @@
             <img src="pics/movie4.png">
             <div class="hover-info">
               <div class="movie-name">The White Queen</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://www.kinopoisk.ru/series/723644/">Watch Now</a></button>
             </div>
           </div>
 
@@ -275,7 +317,7 @@
             <img src="pics/movie7.png">
             <div class="hover-info">
               <div class="movie-name">Charlie's Angels</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/16902">Watch Now</a></button>
             </div>
           </div>
 
@@ -283,7 +325,7 @@
             <img src="pics/movie1.png">
             <div class="hover-info">
               <div class="movie-name">Бойфред из будущего</div>
-              <button class="watch-now">Watch Now</button>
+              <button class="watch-now"><a href="https://oc.kg/#/movie/id/7419">Watch Now</a></button>
             </div>
           </div>
 
@@ -299,7 +341,7 @@
             <img src="pics/game1.png">
             <div class="hover-info">
               <div class="game-name">Super Mario 3</div>
-              <button class="watch-now">Play Now</button>
+              <button class="watch-now"><a href="https://www.smbgames.be/super-mario-bros-3.php">Play Now</a></button>
             </div>
           </div>
 
@@ -307,7 +349,7 @@
             <img src="pics/game2.png">
             <div class="hover-info">
               <div class="game-name">Fortnite</div>
-              <button class="watch-now">Play Now</button>
+              <button class="watch-now"><a href="https://www.fortnite.com/download?lang=ru">Play Now</a></button>
             </div>
           </div>
 
@@ -315,7 +357,7 @@
             <img src="pics/game3.png">
             <div class="hover-info">
               <div class="game-name">Battlefield 2042</div>
-              <button class="watch-now">Play Now</button>
+              <button class="watch-now"><a href="https://store.steampowered.com/app/1517290/Battlefield_2042/">Play Now</a></button>
             </div>
           </div>
 
@@ -323,7 +365,7 @@
             <img src="pics/game4.png">
             <div class="hover-info">
               <div class="game-name">Assassin's creed: Valhalla</div>
-              <button class="watch-now">Play Now</button>
+              <button class="watch-now"><a href="https://store.steampowered.com/app/2208920/Assassins_Creed_Valhalla/">Play Now</a></button>
             </div>
           </div>
 
@@ -331,7 +373,7 @@
             <img src="pics/game5.png">
             <div class="hover-info">
               <div class="game-name">Lego Batman</div>
-              <button class="watch-now">Play Now</button>
+              <button class="watch-now"><a href="https://store.steampowered.com/app/21000/LEGO_Batman_The_Videogame/">Play Now</a></button>
             </div>
           </div>
 
@@ -339,15 +381,15 @@
             <img src="pics/game6.png">
             <div class="hover-info">
               <div class="game-name">Horizon Zero Dawn</div>
-              <button class="watch-now">Play Now</button>
+              <button class="watch-now"><a href="https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/">Play Now</a></button>
             </div>
           </div>
 
           <div class="game-card">
             <img src="pics/game7.png">
             <div class="hover-info">
-              <div class="game-name">Sonic Dash +</div>
-              <button class="watch-now">Play Now</button>
+              <div class="game-name">Sonic Dash</div>
+              <button class="watch-now"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=475336464">Play Now</a></button>
             </div>
           </div>
       </div>
@@ -414,7 +456,24 @@
     <p class="copText">Copyright &copy; 2022 Hot Africa. All rights reserved.</p>
 </footer>
 
-
+<div id="signUpModal" class="modal">
+  <div class="modal-content">
+    <p class="mod-text">Register to get started</p>
+    <form class="forms">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="phone" placeholder="Phone number" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm-password" placeholder="Confirm password" required>
+      <div>
+        <input type="checkbox" id="terms">
+        <label for="terms">By Signing up, you agree to the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+      </div>
+      <button class="register" type="submit">Register</button>
+    </form>
+    <a class="back-to-website close-btn">Back to website</a>
+  </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
